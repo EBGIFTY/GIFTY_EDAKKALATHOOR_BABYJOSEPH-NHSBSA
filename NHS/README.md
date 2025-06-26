@@ -10,7 +10,7 @@ This project automated testing using:
 - ExtentReports and Cucumber reports for comprehensive and visual test reporting.
 
 The test validates key user flows, ensuring users can:
-- Enter search preferences (keywords, location) correctly.
+- Enter search preferences correctly.
 - Receive accurate matching job results.
 - See results consistently sorted by the newest Date Posted.
 
