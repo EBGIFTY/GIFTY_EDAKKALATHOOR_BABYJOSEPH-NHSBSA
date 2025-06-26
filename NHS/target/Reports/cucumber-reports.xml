@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="967.977" tests="23" skipped="0" failures="2" errors="0" timestamp="2025-06-26T13:12:25.912599Z">
+<testcase classname="NHS Job Search Functionality" name="TC-01:Jobseeker searches for a job and sorts by newest date posted via Chromebrowser - #1.1" time="53.239">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Automation Test Engineer" and "London" into the Search functionality.passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-01:Jobseeker searches for a job and sorts by newest date posted via Chromebrowser - #1.2" time="81.206">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "QA" and "Southampton" into the Search functionality.............passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-01:Jobseeker searches for a job and sorts by newest date posted via Chromebrowser - #1.3" time="81.233">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "QA engineer" and "England" into the Search functionality........passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-01:Jobseeker searches for a job and sorts by newest date posted via Chromebrowser - #1.4" time="6.351">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Moon" and "" into the Search functionality......................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-02: Jobseeker searches for a job and sorts by newest date posted via Firefox Browser - #1.1" time="9.978">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Software Test Engineer" and "London" into the Search functionality.passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-02: Jobseeker searches for a job and sorts by newest date posted via Firefox Browser - #1.2" time="27.791">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "QA Automation engineer" and "Southampton" into the Search functionality.passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-02: Jobseeker searches for a job and sorts by newest date posted via Firefox Browser - #1.3" time="67.189">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "QA engineer" and "Southampton" into the Search functionality....passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.1" time="25.231">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "1234567" and "London" into the Search functionality.............passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.2" time="21.25">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "-------------" and "London" into the Search functionality.......passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.3" time="22.034">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "-------------" and "London1111111" into the Search functionality.passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.4" time="21.215">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Software Testing" and "Ep1111111" into the Search functionality.passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.5" time="20.672">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "A" and "L" into the Search functionality........................passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.6" time="20.798">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Nurse" and "!@#$%^&*" into the Search functionality.............passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.7" time="30.063">
+<failure type="java.lang.AssertionError" message="Expected message not found">
+<![CDATA[java.lang.AssertionError: Expected message not found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.JobsearchPage.validate_error_message(JobsearchPage.java:251)
+	at stepDefs.NhsJobSearchStepDef.Validate_the_error_message(NhsJobSearchStepDef.java:114)
+	at ✽.Validate the error message(file:///C:/Users/rojan/Downloads/GIFTY_E_B_NHSBSA/NHS/src/test/java/features/nhs_JobSearch.feature:39)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "<256-char-string>" and "London" into the Search functionality...passed
+Then Validate the error message.............................................failed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-03:Jobseeker searches for a invalid job/locations via chrome browser - #1.8" time="27.227">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put "Nurse" and "<256-char-string>" into the Search functionality....passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-04:Jobseeker searches for a job and sorts by newest date posted with all filtered values via chrome browser - #1.1" time="32.268">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-04:Jobseeker searches for a job and sorts by newest date posted with all filtered values via chrome browser - #1.2" time="37.683">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-05:Jobseeker searches for a job and sorts by newest date posted with all filtered values via firefox browser - #1.1" time="86.62">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-05:Jobseeker searches for a job and sorts by newest date posted with all filtered values via firefox browser - #1.2" time="83.181">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-05:Jobseeker searches for a job and sorts by newest date posted with all filtered values via firefox browser - #1.3" time="59.328">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then I should get a list of jobs which matches my preferences...............passed
+And sort my search results with "Date Posted (newest)"  and from dropdown "sort".passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-06:Jobseeker searches for  invalid values in all filtered values via firefox browser - #1.1" time="50.856">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-06:Jobseeker searches for  invalid values in all filtered values via firefox browser - #1.2" time="51.571">
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then Validate the error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS Job Search Functionality" name="TC-06:Jobseeker searches for  invalid values in all filtered values via firefox browser - #1.3" time="50.53">
+<failure type="java.lang.AssertionError" message="Expected message not found">
+<![CDATA[java.lang.AssertionError: Expected message not found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.JobsearchPage.validate_error_message(JobsearchPage.java:251)
+	at stepDefs.NhsJobSearchStepDef.Validate_the_error_message(NhsJobSearchStepDef.java:114)
+	at ✽.Validate the error message(file:///C:/Users/rojan/Downloads/GIFTY_E_B_NHSBSA/NHS/src/test/java/features/nhs_JobSearch.feature:89)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am a jobseeker on NHS Jobs website..................................passed
+When I put all values into the Search functionality.........................passed
+Then Validate the error message.............................................failed
+]]></system-out>
+</testcase>
+</testsuite>

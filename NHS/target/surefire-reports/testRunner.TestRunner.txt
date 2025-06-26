@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: testRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 23, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 969.8 s <<< FAILURE! -- in testRunner.TestRunner
+NHS Job Search Functionality.TC-03:Jobseeker searches for a invalid job/locations via chrome browser #7 -- Time elapsed: 30.16 s <<< FAILURE!
+java.lang.AssertionError: Expected message not found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.JobsearchPage.validate_error_message(JobsearchPage.java:251)
+	at stepDefs.NhsJobSearchStepDef.Validate_the_error_message(NhsJobSearchStepDef.java:114)
+	at ✽.Validate the error message(file:///C:/Users/rojan/Downloads/GIFTY_E_B_NHSBSA/NHS/src/test/java/features/nhs_JobSearch.feature:39)
+
+NHS Job Search Functionality.TC-06:Jobseeker searches for  invalid values in all filtered values via firefox browser #3 -- Time elapsed: 50.53 s <<< FAILURE!
+java.lang.AssertionError: Expected message not found
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.JobsearchPage.validate_error_message(JobsearchPage.java:251)
+	at stepDefs.NhsJobSearchStepDef.Validate_the_error_message(NhsJobSearchStepDef.java:114)
+	at ✽.Validate the error message(file:///C:/Users/rojan/Downloads/GIFTY_E_B_NHSBSA/NHS/src/test/java/features/nhs_JobSearch.feature:89)
+
